@@ -39,15 +39,45 @@ body {
   height: 100vh;
 }
 
-.tech-stack-wrapper {
-  width: 75%;
+.tech-stack-section {
+  width: 75% auto;
+  height: 100vh;
   display: flex;
   justify-content: space-around;
-  padding: 8px;
-  margin: 35px auto;
+  align-items: center;
 }
 
-.tech-stack-wrapper .fa-brands {
-  width: 100px;
-  height: 100px;
+i {
+  opacity: 0;
+  transform: translateX(100%);
+  filter: blur(8px);
+  color: lightblue;
 }
+
+.fade {
+  opacity: 1;
+  transform: translateX(0);
+  transition: 300ms ease-in;
+  filter: blur(0);
+}
+
+i:nth-of-type(2) {
+  transition-delay: 300ms;
+}
+
+i:nth-of-type(3) {
+  transition-delay: 600ms;
+}
+
+i:nth-of-type(4) {
+  transition-delay: 900ms;
+}
+
+i:nth-of-type(5) {
+  transition-delay: 1200ms;
+} 
+
+
+
+
+
